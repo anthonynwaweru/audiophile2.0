@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Home from "./components/Home";
 import { useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import HeadPhones from "./components/HeadPhones";
 
 const Container = styled.div`
   font-family: "Manrope";
@@ -24,6 +25,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/headphones">
+            <HeadPhones />
           </Route>
         </Switch>
       </Container>

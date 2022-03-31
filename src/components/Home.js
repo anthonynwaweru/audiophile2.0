@@ -9,8 +9,8 @@ import ZxNine from "./ZxNine";
 import ZxSeven from "./ZxSeven";
 
 const Container = styled.div`
-  max-width: 100vw;
-  margin: auto;
+  width: 100vw;
+  //   margin: auto;
 `;
 
 const Home = () => {
