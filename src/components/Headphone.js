@@ -86,7 +86,7 @@ const Headphone = (props) => {
   const { desktop } = image;
   console.log(`${desktop}`);
   const imgFile = `.${desktop}`;
-  console.log(json.Stringify(imgFile));
+  console.log(imgFile);
 
   if (index % 2 === 0) {
     return (
