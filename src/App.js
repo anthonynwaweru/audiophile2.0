@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import { useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HeadPhones from "./components/HeadPhones";
+import Speakers from "./components/Speakers";
 
 const Container = styled.div`
   font-family: "Manrope";
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/headphones">
             <HeadPhones />
+          </Route>
+          <Route exact path="/speakers">
+            <Speakers />
           </Route>
         </Switch>
       </Container>
