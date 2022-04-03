@@ -3,9 +3,9 @@ import styled from "styled-components";
 import About from "./About";
 import Categories from "./Categories";
 import { data } from "./data";
+import Product from "./Product";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Product from "./Product";
 
 const Container = styled.div``;
 const Header = styled.div`
@@ -29,21 +29,21 @@ const Title = styled.h1`
   text-align: center;
   letter-spacing: 1.42857px;
 `;
-const Speakers = () => {
-  const [speakers, setSpeakers] = useState([]);
+const Earphones = () => {
+  const [earphones, setEarphones] = useState([]);
 
   useEffect(() => {
-    const speakersData = data.filter((dta) => dta.category === "speakers");
-    setSpeakers(speakersData);
+    const speakersData = data.filter((dta) => dta.category === "earphones");
+    setEarphones(speakersData);
   }, []);
 
   return (
     <Container>
       <Header>
         <Navbar />
-        <Title>SPEAKERS</Title>
+        <Title>EARPHONES</Title>
       </Header>
-      {speakers.map((dta, index) => (
+      {earphones.map((dta, index) => (
         <Product details={dta} index={index} />
       ))}
       <Categories />
@@ -53,4 +53,4 @@ const Speakers = () => {
   );
 };
 
-export default Speakers;
+export default Earphones;

@@ -78,7 +78,7 @@ const Button = styled.button`
     background: #fbaf85;
   }
 `;
-const Speaker = (props) => {
+const Product = (props) => {
   const { details, index } = props;
   console.log(details);
   const { name, image, description, ...data } = details;
@@ -123,4 +123,4 @@ const Speaker = (props) => {
   }
 };
 
-export default Speaker;
+export default Product;

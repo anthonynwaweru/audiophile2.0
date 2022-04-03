@@ -4,8 +4,9 @@ import About from "./About";
 import Categories from "./Categories";
 import { data } from "./data";
 import Footer from "./Footer";
-import Headphone from "./Headphone";
+
 import Navbar from "./Navbar";
+import Product from "./Product";
 
 const Container = styled.div``;
 const Header = styled.div`
@@ -44,7 +45,7 @@ const HeadPhones = () => {
         <Title>HEADPHONES</Title>
       </Header>
       {headPhones.map((dta, index) => {
-        return <Headphone key={dta.id} index={index} details={dta} />;
+        return <Product key={dta.id} index={index} details={dta} />;
       })}
 
       <Categories />

@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HeadPhones from "./components/HeadPhones";
 import Speakers from "./components/Speakers";
+import Earphones from "./components/Earphones";
 
 const Container = styled.div`
   font-family: "Manrope";
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route exact path="/speakers">
             <Speakers />
+          </Route>
+          <Route exact path={"/earphones"}>
+            <Earphones />
           </Route>
         </Switch>
       </Container>
