@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { MdOutlineNavigateNext } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Item = styled.div`
   display: flex;
@@ -49,7 +50,7 @@ const Image = styled.img`
   bottom: 43.66%;
   z-index: 2;
 `;
-const Link = styled.a`
+const LinkTag = styled.a`
   text-align: center;
   font-weight: 700;
   opacity: 0.5;
@@ -61,7 +62,7 @@ const Button = styled.button`
   align-items: center;
 //   text-align:center;
   border:none;
-&:hover ${Link}{
+&:hover ${LinkTag}{
   color:#d87d4a;
   opacity:1;
 }
@@ -81,12 +82,14 @@ const CategoryItem = (props) => {
       <Image src={props.image} />
       <Info>
         <Title>{props.title}</Title>
-        <Button>
-          <Link>SHOP</Link>
-          <Icon>
-            <MdOutlineNavigateNext />
-          </Icon>
-        </Button>
+        <Link to={`/${props.title.toLowerCase()}`}>
+          <Button>
+            <LinkTag>SHOP</LinkTag>
+            <Icon>
+              <MdOutlineNavigateNext />
+            </Icon>
+          </Button>
+        </Link>
       </Info>
     </Item>
   );
