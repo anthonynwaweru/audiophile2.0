@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import yxEarphones from "../assets/home/desktop/image-earphones-yx1.jpg";
 
@@ -69,7 +70,9 @@ const YxOne = () => {
       </LeftContent>
       <RightContent>
         <Title>YX1 EARPHONES</Title>
-        <Button>SEE PRODUCT</Button>
+        <NavLink to="/products">
+          <Button>SEE PRODUCT</Button>
+        </NavLink>
       </RightContent>
     </Container>
   );

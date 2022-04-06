@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HeadPhones from "./components/HeadPhones";
 import Speakers from "./components/Speakers";
 import Earphones from "./components/Earphones";
+import ProductDetails from "./components/ProductDetails";
 
 const Container = styled.div`
   font-family: "Manrope";
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route exact path={"/earphones"}>
             <Earphones />
+          </Route>
+          <Route exact path="/products">
+            <ProductDetails />
           </Route>
         </Switch>
       </Container>
