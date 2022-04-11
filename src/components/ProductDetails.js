@@ -6,12 +6,12 @@ const Container = styled.div``;
 const Header = styled.div`
   height: 97px;
   max-width: 100vw;
+  margin: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background: black;
 `;
-const ProductDetails = () => {
+const ProductDetails = (props) => {
+  console.log(props);
   return (
     <Container>
       <Header>

@@ -15,7 +15,6 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #979797;
 `;
 const Logo = styled.img`
   width: 143px;
@@ -60,6 +59,7 @@ const NavLinkStyled = styled(NavLink)`
 `;
 
 const Navbar = (props) => {
+  console.log(props);
   return (
     <>
       <Container>
@@ -72,23 +72,23 @@ const Navbar = (props) => {
               </NavLinkStyled>
             </NavItem>
             <NavItem>
-              <NavLinkStyled to="/headphones">
+              <NavLinkStyled activeClassName="active" to="/headphones">
                 <Link>HEADPHONES</Link>
               </NavLinkStyled>
             </NavItem>
             <NavItem>
-              <NavLinkStyled to="/speakers">
+              <NavLinkStyled activeClassName="active" to="/speakers">
                 <Link>SPEAKERS</Link>
               </NavLinkStyled>
             </NavItem>
             <NavItem>
-              <NavLinkStyled to="earphones">
+              <NavLinkStyled activeClassName="active" to="earphones">
                 <Link>EARPHONES</Link>
               </NavLinkStyled>
             </NavItem>
           </MenuItems>
           <Icon>
-            <NavLinkStyled to="/cart">
+            <NavLinkStyled activeClassName="active" to="/cart">
               <AiOutlineShoppingCart />
             </NavLinkStyled>
           </Icon>

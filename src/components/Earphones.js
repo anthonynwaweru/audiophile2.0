@@ -44,7 +44,7 @@ const Earphones = () => {
         <Title>EARPHONES</Title>
       </Header>
       {earphones.map((dta, index) => (
-        <Product details={dta} index={index} />
+        <Product key={index} details={dta} index={index} />
       ))}
       <Categories />
       <About />
